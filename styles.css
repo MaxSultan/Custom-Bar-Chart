@@ -1,0 +1,89 @@
+.y-axis .domain {
+    display: none;
+}
+
+.x-axis .domain {
+    color: #F0F4F8;
+}
+
+.y-axis .tick line{
+    width: 100%;
+    color: #ECECEC
+}
+.bars {
+    border-radius: 5px;
+}
+.x-axis .tick line {
+    visibility: hidden;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+svg{
+    border: 1px solid #ECECEC;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+}
+
+body {
+   background-color: #FAFBFC;
+}
+
+text {
+    color: #78869B;
+    fill: #78869B;
+}
+
+.title{
+    font-size: 24px;
+    fill: black;
+}
+
+#tooltip text {
+    color: white;
+    fill: white;
+}
+
+#tooltip{
+    opacity: 0;
+    background-color: black;
+    color: white;
+    position: fixed;
+    padding: 8px;
+    border-radius: 4px;
+    pointer-events: none;
+    text-align: center;
+}
+
+#value {
+    margin-bottom: 8px;
+}
+
+#tooltip::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -10px;
+    width: 0;
+    height: 0;
+    border-top: solid 8px black;
+    border-left: solid 10px transparent;
+    border-right: solid 10px transparent;
+    pointer-events: none;
+}
+
+#bar-chart-select {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid #ECECEC;
+    background-color: #F0F4F8;
+}
+
+#bar-chart-select:after{
+    color: #78869B;
+    fill: #78869B;
+}
